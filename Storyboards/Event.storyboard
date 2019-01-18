@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Event-->
+        <scene sceneID="6if-KI-uin">
+            <objects>
+                <viewController id="VGG-yb-zDF" customClass="EventViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4rz-Dg-LRY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="trz-S9-014"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Event" id="X9f-mF-0PK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JiV-mu-zn3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2644" y="1126.6866566716642"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Myv-jW-MXd">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationEvent" automaticallyAdjustsScrollViewInsets="NO" id="iZD-0e-pcy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="event" selectedImage="event1" id="GcU-Um-Mv6">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jh1-Lr-DLy">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VGG-yb-zDF" kind="relationship" relationship="rootViewController" id="Bdx-Ep-NmN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IdE-Ex-dmg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1704.8" y="1126.6866566716642"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="event" width="25" height="25"/>
+        <image name="event1" width="25" height="25"/>
+    </resources>
+</document>
